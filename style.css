@@ -1,0 +1,187 @@
+
+body{
+    background-color: hsl(232, 89%, 93%);
+    box-sizing: border-box;
+    margin:0;
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+}
+
+.login-popup input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+} 
+.navbar{
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    display: flex;
+
+}
+
+.navbar a{
+display: inline-block; 
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    width: 90%;
+   max-width: 1200px;
+   margin-bottom: 40px; 
+}
+  
+  .grid-container > div {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  .image-item{
+    grid-column: 1 / span 4;
+    position: relative;
+   max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+.text{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: white;
+    font:bold;
+  }
+
+  .btn{
+    position: absolute;
+    top: 90%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+ .fit-info{
+    grid-column: 1 / span 4;
+ }
+
+ .image-pair {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  mask-image: linear-gradient(black 80%, transparent)
+ }
+
+.image-pair img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.image-button{
+
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
+
+.made-in-mexico .small-image {
+    width: 150px; 
+    height: auto;
+    margin-bottom: 5px; 
+}
+
+.made-in-mexico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.made-in-mexico-title{
+    font-size: 18px;
+ margin: 0;}
+
+ .made-in-mexico-text{
+        font-size: 14px;
+    margin-top: 2px;}
+
+.general-resources {
+    font-size: 20px;
+    color: black;
+    }
+
+    .general-resources ul,li,a{
+        font-size: 20px;
+        color: black;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        text-align: left;
+    }
+
+    .whatsapp-btn {
+        position: fixed;
+        right: 40px; 
+        bottom: 20px; 
+        background-color: #25d366; 
+        color: #fff; 
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+.footer{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+    gap: 20px;
+}
+.footer a{
+    margin: 0 10px;
+    text-decoration: none;
+    gap: 20px;
+}
+
